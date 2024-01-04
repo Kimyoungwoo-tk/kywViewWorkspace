@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/116a85af51.js" crossorigin="anonymous"></script>
+  <style>
+    /* Fontawesome 4.7 */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+    .container{
+      /* border: 1px solid black; */
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .title{
+      background-color: #eee;
+    }
+
+    .heart svg {
+      font-size: 40px;
+      color: rgb(206, 26, 26);
+      margin-top: 10px;
+      animation: bouns 1s ease-in-out infinite;
+    }
+    .star svg{
+      font-size: 40px;
+      color: yellow;
+      margin-top: 10px;
+      animation: spin 1s ease-in-out infinite;
+
+
+    }
+    .loading svg{
+      font-size: 40px;
+      color: black;
+      margin-top: 10px;
+      animation: rotate 1s linear infinite;
+    }
+    .contents{}
+
+    @keyframes rotate{
+    from{
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+      
+    }
+
+    @keyframes spin{
+      0%{
+        transform: scaleX(1);
+      }
+      50%{
+        transform: scaleX(0);
+      }
+      100%{
+        transform: scaleX(1);
+      }
+    }
+
+    @keyframes bouns{
+      0%{
+        transform: scale(1.2);
+      }
+      60%{
+        transform: scale(0.9);
+      }
+      100%{
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">애니메이션 예시1</div>
+    <div class="contents">
+      <div class="heart"><i class="fa fa-heart"></i></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="title">애니메이션 예시2</div>
+    <div class="contents">
+      <div class="star"><i class="fa fa-star"></i></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="title">애니메이션 예시3</div>
+    <div class="contents">
+      <div class="loading"><i class="fa fa-repeat"></i></div>
+    </div>
+  </div>
+</body>
+</html>
