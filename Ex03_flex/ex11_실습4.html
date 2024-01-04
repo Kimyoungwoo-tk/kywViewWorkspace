@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section{
+      /* justify-content: space-around; */
+      display: flex;
+      width: 1200px;
+      /* align-items: center; */
+
+    }
+    article1{
+      padding: 20px;
+      flex: 1;
+      background-color: yellow;
+    }
+    article1 h2{
+      padding: 20px
+    }
+    article p{
+      padding: 20px;
+    }
+    article2{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .sub1{
+      padding: 20px;
+      flex: 1;
+      background-color: skyblue;
+      
+    }
+    .sub2{
+      padding: 20px;
+      flex: 1;
+      background-color: tomato;
+    }
+    
+    @media(max-width:768px){
+      body{
+        align-items: flex-start;
+      }
+      section{
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+
+    
+
+  </style>
+</head>
+<body>
+  <section>
+    <article1>
+      <h2>content1</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, eaque fugit explicabo minima, corporis nam commodi deleniti expedita minus deserunt vero aliquam tempore rem laboriosam pariatur enim saepe ab debitis ex cum impedit vitae earum aut. Repudiandae deserunt rerum vel fugiat aliquam nesciunt at. Deserunt beatae a explicabo totam dicta temporibus, nam corporis, laudantium suscipit laborum quo debitis distinctio saepe expedita eligendi possimus quod illo ipsum, repellendus assumenda quae excepturi animi. Reiciendis aliquam consectetur aperiam eveniet inventore? Dicta non tenetur obcaecati soluta iure nihil atque consequatur eligendi aut neque. A animi dolor odio ratione hic rem! Ad voluptatum quos distinctio.</p>
+    </article1>
+    <article2>
+      <div class="sub1">
+        <h2>sub1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae doloremque sequi blanditiis in! Quidem cupiditate natus, voluptatem eos error asperiores cum sequi mollitia dolorem possimus quo nulla odio perspiciatis dolore?</p>
+      </div>
+      <div class="sub2">
+        <h2>sub2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ratione sint consectetur necessitatibus magni nihil inventore quos debitis, doloribus illum ullam repellendus deleniti dolor officia, obcaecati neque architecto fugiat perferendis.</p>
+      </div>
+    </article2>
+  </section>
+</body>
+</html>

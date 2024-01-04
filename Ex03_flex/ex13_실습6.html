@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      background-color: lightslategray;
+      display: flex;
+    }
+    header{
+      flex: 2;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo{}
+    .gbn{}
+    a{
+      margin: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    
+    .search{
+      margin: 10px;
+    }
+    @media(max-width:768px){
+      header{
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./Ex03_flex/images/logo.png" alt="" height="80px">
+    </div>
+    <div class="gnb">
+      <a href="">Home</a>
+      <a href="">About us</a>
+      <a href="">Service</a>
+      <a href="">Contact us</a>
+      <a href="">Blog</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search">
+    </div>
+  </header>
+</body>
+</html>
