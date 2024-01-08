@@ -1,0 +1,122 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap'); 
+a{ text-decoration: none; color: #222;}
+h1,h2,h3,h4,h5,h6{ margin: 0;}
+button{ cursor: pointer; outline: none;}
+
+body{
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+header{
+  background-color: rgb(83, 83, 236);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+nav{
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+}
+.logo img{
+  filter: invert();
+  width: 100px;
+  margin: 0 10px;
+}
+.gnb{
+  display: flex;
+}
+.gnb a{
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.sns{
+
+}
+.sns i{
+  margin: 5px;
+  color: white;
+}
+.gnb a:hover , .sns i:hover{
+  color: bisque;
+}
+
+@media(max-width:768px){
+  header{
+    height: auto;
+  }
+  nav{
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+  .logo{
+    width: 100%;
+    padding: 10px;
+  }
+  .gnb, .sns{
+    display: none;
+  }
+  /* 버튼을 클릭했을 때 .gnb, .sns 클래스 태그에 .on 붙여주기 */
+  .gnb.on, .sns.on{
+    display: flex;
+  }
+.gnb{
+  flex-direction: column;
+  text-align: center;
+}
+.sns{
+  width: 100%;
+  background-color: skyblue;
+  /* text-align: center; */
+  justify-content: center;
+}
+.trigger{
+ height: 15px;
+ width: 25px;
+ position: absolute;
+ top: 20px;
+ right: 20px;
+ /* border: 1px solid black; */
+}
+.trigger span{
+  height: 3px;
+  width: 100%;
+  background-color: bisque;
+  position: absolute;
+  transition: 0.3s;
+}
+.trigger span:nth-child(1){
+  top: 0;
+}
+.trigger span:nth-child(2){
+  top: 50%;
+}
+.trigger span:nth-child(3){
+  top: 100%;
+}
+
+.trigger.active span:nth-child(1){
+  transform: rotate(45deg);
+  top: 50%;
+}
+.trigger.active span:nth-child(2){
+  /* top: 50%; */
+  /* 투명도를 0 으로 해준것 */
+  opacity: 0;
+}
+.trigger.active span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+}
