@@ -1,0 +1,100 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* reset CSS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:300,400,500,700,700&display=swap');
+a{ text-decoration: none; color: #222;}
+h1,h2,h3,h4,h5,h6{ margin: 0; font-weight: normal;}
+button{ cursor: pointer; outline: none;}
+input,textarea,select{
+  outline: none;
+}
+body{
+  margin: 0;
+  height: 100vh;
+  font-family: 'Noto Sans KR' , sans-serif;
+}
+button,input,textarea,select{
+  font-family: 'Noto Sans KR' , sans-serif;
+}
+.container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  height: 400px;
+  width: 300px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card:nth-child(1) .content{
+  background: linear-gradient(to top,crimson,transparent);
+}
+.card:nth-child(2) .content{
+  background: linear-gradient(to top,dodgerblue,transparent);
+}
+.card:nth-child(3) .content{
+  background: linear-gradient(to top,yellowgreen,transparent);
+}
+
+
+
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 150px;
+  transition: 0.3s;
+}
+.content h2{
+  font-size: 30px;
+}
+.content span{
+  font-size: 14px;
+  color: gold;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+}
+
+.sns{}
+.sns a{
+  color: #fff;
+  border: 1px solid #fff;
+  /* a태그는 인라인 속성이라 크기값을 못가짐 */
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  line-height: 20px;
+  border-radius: 50%;
+  font-size: 13px;
+}
+.card:hover .content{
+ top: 0;
+}
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px black;
+}
+
+
+
+
+/* 모바일 환경 */
+@media screen and (max-width: 767px){
+  
+}
+
+/* 테블릿 환경  */
+@media (min-width:768px) and(max-width: 1024px){
+  
+}
